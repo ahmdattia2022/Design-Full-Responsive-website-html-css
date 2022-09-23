@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+
+* {
+    font-family: 'cairo';
+    box-sizing: border-box;/*very important*/
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    display: flex; /*each element in its size*/
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e4356; 
+    color: white;
+    padding: 0px 100px;
+    border-top: 4px solid red; 
+    position: fixed;
+    width: 100%;
+}    
+header a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: ease 500ms;
+    font-size: 18px;
+}
+header a:hover {
+    color: #1abc9c;
+    font-size: 20px;
+}
+.carsour {
+    height: 100vh; /*view port hight*/
+    background-color: rgba(0, 0, 0, .4);
+    display: flex;
+    align-items: center;
+    color: white;
+    background-size: cover;
+    background-image: url(images/aaron-burden-QJDzYT_K8Xg-unsplash.jpg);
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-position: center;
+    
+}
+.carsour h2 {
+    color: #1e4356;
+}
+.carsour div{
+    margin: 0px 20vw;
+}
+.carsour div span {
+    color: crimson;
+}
+.carsour a {
+    color: white;
+    text-decoration: none;
+    background-color: #1abc9c;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 18px;
+    transition: ease .4 s;
+}
+.carsour a:hover {
+    /* font-size: 20px; */
+    transform: scale(1.1);
+    background-color: #1e4356;
+
+}
+.services {
+    margin-bottom: 20px;
+}
+.services h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #1e4356;
+}
+.services h2 {
+    text-align: center;
+    margin: 20px; 
+}
+.services .container {
+    display: flex ;
+    padding: 0px 80px;
+    flex-wrap: wrap;
+}
+.services .card {
+    border: 0px solid ;
+    margin-right: 20px;
+    margin-top: 50px;
+    box-shadow: 3px 3px 6px 6px #ccc;
+    padding: 10px;
+    width: 16em; /*em -> from parent div , er -> */
+
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+}
+.card h2 {
+    color: crimson;
+    font-weight: bold;
+    
+}
+.card p {
+    font-size: 16px;
+}
+.services .card div {
+    color: #1e4356;
+    font-size: 50px;
+}
+.card:active {
+    opacity: .4;
+}
